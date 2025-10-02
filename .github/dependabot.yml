@@ -65,3 +65,38 @@ updates:
     - "kind/misc"
     - "ok-to-test"
     - "javascript"
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/components
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /packages/e2e
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /packages/e2e/base-image
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/e2e
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/graph
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/utils
+    schedule:
+      interval: daily
