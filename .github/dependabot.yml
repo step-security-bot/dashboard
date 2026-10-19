@@ -3,6 +3,8 @@ updates:
   - package-ecosystem: "docker"
     directories:
     - "**/*"
+    - /packages/e2e
+    - /packages/e2e/base-image
     schedule:
       interval: "weekly"
       day: "sunday"
@@ -49,6 +51,11 @@ updates:
   - package-ecosystem: "npm"
     directories:
       - "**/*"
+      - /
+      - /packages/components
+      - /packages/e2e
+      - /packages/graph
+      - /packages/utils
     schedule:
       interval: "weekly"
       day: "sunday"
